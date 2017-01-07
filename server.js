@@ -1,12 +1,12 @@
 var http = require('http');
 var url = require('url');
-var router = require('./router');
-function start(){
+
+function start(route, routeMap){
   var httpServer = http.createServer();
 
   httpServer.on('request', function (request, response) {
     var pathName = url.parse(request.url).pathname;
-    router.route(pathName, response);
+    route(pathName, routeMap, response);
   });
 
   httpServer.listen(3000, function (){

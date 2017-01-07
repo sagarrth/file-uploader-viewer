@@ -15,5 +15,6 @@
   "bugs": {
     "url": "https://github.com/SagarRouth/file-uploader-viewer/issues"
   },
-  "homepage": "https://github.com/SagarRouth/file-uploader-viewer#readme"
+  "homepage": "https://github.com/SagarRouth/file-uploader-viewer#readme",
+  "dependencies": {}
 }
