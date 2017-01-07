@@ -1,7 +1,7 @@
-function route(urlPath, routeMap, response){
+function route(urlPath, routeMap, request, response){
   console.log('received the request: '+urlPath);
   if(typeof routeMap[urlPath]==='function'){
-    routeMap[urlPath](response);
+    routeMap[urlPath](request, response);
   } else if (urlPath==='favicon.ico') {
     response.end();
   } else {

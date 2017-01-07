@@ -16,5 +16,7 @@
     "url": "https://github.com/SagarRouth/file-uploader-viewer/issues"
   },
   "homepage": "https://github.com/SagarRouth/file-uploader-viewer#readme",
-  "dependencies": {}
+  "dependencies": {
+    "formidable": "^1.0.17"
+  }
 }
