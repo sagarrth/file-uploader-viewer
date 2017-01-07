@@ -1,0 +1,19 @@
+{
+  "name": "file-uploader-viewer",
+  "version": "1.0.0",
+  "description": "An example application using Node js to understand the workings of a http-server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SagarRouth/file-uploader-viewer.git"
+  },
+  "author": "Sagar Routh <sagarrouth0512@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SagarRouth/file-uploader-viewer/issues"
+  },
+  "homepage": "https://github.com/SagarRouth/file-uploader-viewer#readme"
+}
