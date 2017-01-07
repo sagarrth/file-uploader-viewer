@@ -15,7 +15,7 @@ function upload(request, response){
   form.parse(request, function (error, fields, files) {
     fs.readFile(files.uploadedFile.path, function(error, data){
       if(error) throw error;
-      var filePath = path.join(__dirname,'files', files.uploadedFile.name);
+      var filePath = path.join(__dirname,'static', files.uploadedFile.name);
       fs.writeFile(filePath, data, function(error){
         response.writeHead('200', {'content-type':'text/html'});
         response.write('File uploaded<br>');
@@ -26,7 +26,7 @@ function upload(request, response){
 }
 
 function display(request, response){
-  var directoryPath = path.join(__dirname,'files');
+  var directoryPath = path.join(__dirname,'static');
   fs.readdir(directoryPath, function(error, filesArr){
     if(error) throw error;
     response.writeHead('200', {'content-type':'text/html'});
