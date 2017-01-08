@@ -4,10 +4,8 @@ var formidable = require('formidable');
 
 function base(request, response){
   var filepath = path.join(__dirname, '/static/form.html');
-  fs.readFile(filepath, 'utf-8', function (err, contents) {
-    if(err) throw err;
-    response.end(contents);
-  });
+  response.writeHead('200',{'content-type':'text/html'});
+  fs.createReadStream(filepath, 'utf-8').pipe(response);
 }
 
 function upload(request, response){
